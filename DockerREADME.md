@@ -42,4 +42,14 @@
 
 ## Docker build from maven
 ### Using io.fabric8 plugin
-1. mvn clean package docker:build
+> mvn clean package docker:build
+
+### Push to docker hub
+>    <servers>
+ 		<server>
+ 			<id>docker.io</id>
+ 			<username></username>
+ 			<password></password>
+ 		</server>
+     </servers>
+> mvn clean package docker:build docker:push^C
