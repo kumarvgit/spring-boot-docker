@@ -52,4 +52,9 @@
  			<password></password>
  		</server>
      </servers>
-> mvn clean package docker:build docker:push^C
+> mvn clean package docker:build docker:push
+
+## Run docker from command line
+> mvn docker:run starts in interactive mode\
+> mvn docker:start starts in -d detached mode 
+> mvn docker:stop stops the container
